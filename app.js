@@ -248,49 +248,104 @@ let div = document.querySelector('.div');
 // div.innerHTML=`<h1>Today is ${daysName[currentDate.getDay()]}</h1>`
 
 
+// Question No 14 :
+
+// 14. Write a program that displays a message “It’s Fun day” if its 
+// Saturday or Sunday today.
+
+// Solution :
+// let currentDate =new Date();
+
+// let daysName =['Sunday','Monday','Wednesday','Thursday','Friday','Saturday'];
+
+// if(currentDate.getDay()===0 || currentDate.getDay()===6){
+        //         div.innerHTML =`It's a fun day`
+        // }else{
+                //         div.innerHTML =` Not a fun day`
+                // }
+                
+// Question No 15 :
+
+// 15. Write a program that shows the message “First fifteen days of the 
+// month” if the date is less than 16th of the month else shows “Last 
+// days of the month”.
+
+// Solution :
+
+// let currentDate = new Date();
+// console.log(currentDate);
+// let dayOfMonth =`${currentDate.getDate()}`
+// if(dayOfMonth <=15 ){
+        //         div.innerHTML=`<h1>First fifteen days of the month</h1>`;
+        // }else{
+                //         div.innerHTML=`<h1>Last fifteen days of the month</h1>`
+                // }
+                
+                
+ // Question No 16 :
+ 
+ // 16. Write a program that determines the minutes since midnight, Jan. 
+// 1, 1970 and assigns it to a that hasn't been declared 
+// beforehand. Use any variable you to represent the Date object
+
+                
+// Solution :
+
+// let currentDate =new Date();
+
+// div.innerHTML = `<h1>Current Date :${currentDate.toUTCString()}<br> Elapsed milliseconds from January 1,1970 : ${currentDate.getTime()}<br> Elapsed minutes from January 1,1970 : ${currentDate.getTime()/ 1000 / 60}</h1>`
 
 
+// Question No 17 :
+
+// 17. Write a program that tests whether it's before noon and alert “Its 
+// AM” else “its PM”.
+
+// Solution :
+
+// let currentDate = new Date();
+
+// let time = currentDate.getHours();
+// console.log(time);
+// if(time <= 12){
+//         div.innerHTML =`<h1>It's AM</h1>`
+// }else{
+//         div.innerHTML =`<h1>It's PM</h1>`
+// }
 
 
+// Question No 18 :
+
+// 18. Write a program that creates a Date object for the last day of the 
+// last month of 2020 and assigns it to variable named laterDate
+
+// Solution :
+
+// let currentDate =new Date('December 31,2020');
+
+// console.log(currentDate);
+// let laterDate =currentDate 
+// console.log(laterDate);
 
 
+// Question No 19 :
+
+// 19. Create a date object of the starting date of this Ramadan and alert 
+// the number of days past since 1st Ramadan?
+// Note: 1st Ramadan was on June 18, 2015
+
+// Solution :
 
 
+// let eidDate =new Date('June 18, 2015');
+// let currentDate =new Date();
+// let passedDate = `${currentDate.getTime()-eidDate.getTime()}`
+// passedDate = Math.floor(passedDate /1000/60/60/24)
+// div.innerHTML =`${passedDate} days have passed since 1<sup>st</sup> Ramadan,2015`
 
 
+// Question No 19 :
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Solution :
 
