@@ -344,8 +344,112 @@ let div = document.querySelector('.div');
 // div.innerHTML =`${passedDate} days have passed since 1<sup>st</sup> Ramadan,2015`
 
 
-// Question No 19 :
+// Question No 20 :
 
+// 20. Write a program that displays in your browser the seconds that 
+// elapsed between the reference date and the beginning of 2015.
 
 // Solution :
+
+// let days = ['Mon','Tues','Wed','Thurs','Fri','Sat','Sun']
+// let currentDate = new Date();
+// let refDate = new Date('25,april,2015 22:15:00');
+
+
+// let ellapsedTime = currentDate - refDate ; 
+
+// console.log(ellapsedTime/1000);
+
+// div.innerHTML = `
+// <h3><br>
+// on the refrence date ${days[refDate.getDay()]} ${refDate},<br><br>${Math.ceil(ellapsedTime/1000)} seconds had passed since beginning of 2015
+// </h3>
+// `
+// Question No 22 :
+
+// 22. Write a program that creates a date object and show the date 
+// in an alert box that is reset to 100 years back?
+
+// Solution :
+
+
+
+// let days = ['Mon','Tues','Wed','Thurs','Fri','Sat','Sun'];
+
+
+
+// let currentDate = new Date();
+// let setYear = new Date(currentDate)
+// setYear.setFullYear(currentDate.getFullYear()-100)
+
+// console.log(setYear);
+
+
+
+
+
+// Question No 23 :
+
+// 23. Write a program to ask the user about his age. Calculate and 
+// show his birth year in your browser.
+
+// Solution :
+// let age = +prompt('Enter your age')
+
+// let currentYear = new Date().getFullYear();
+
+// let birthYear = currentYear - age;
+
+// console.log(birthYear); 
+// div.innerHTML = `Your age is ${age}<br><br>Your birth year is ${birthYear}`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
